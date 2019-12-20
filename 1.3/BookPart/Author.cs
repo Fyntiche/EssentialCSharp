@@ -1,12 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace _1._3.BookPart
 {
-    internal class Author
+    class Author
     {
         private string name;
 
-
+        
         public Author()
         {
         }
@@ -16,7 +20,7 @@ namespace _1._3.BookPart
             Name = value;
         }
 
-        public string Name { get => name; set => name = value; }
+        public string Name { get { return name; } set { name = value; } }
 
         public void Show()
         {

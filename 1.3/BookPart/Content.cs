@@ -1,15 +1,25 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace _1._3.BookPart
 {
-    internal class Content
+    class Content
     {
         private string name;
 
         public string Name
         {
-            get => name;
-            set => name = value;
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
         }
         public Content()
         {

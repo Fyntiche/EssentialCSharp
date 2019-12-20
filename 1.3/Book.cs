@@ -1,18 +1,26 @@
 ﻿using _1._3.BookPart;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace _1._3
 {
-    internal class Book
+    class Book
     {
         private Title title;
         private Author author;
         private Content content;
-        private string name;
+        string name;
 
-        private string Name
+        string Name
         {
-            get => name;
-            set => name = value;
+            get { return name; }
+            set
+            {
+                name = value;
+            }
         }
 
         internal Title Title { get => title; set => title = value; }
@@ -30,8 +38,7 @@ namespace _1._3
         {
             string nameTitle = value;
             InicializationBook(nameTitle);
-            Name = value;
-        }
+            Name = value;        }
 
         public void Show()
         {
