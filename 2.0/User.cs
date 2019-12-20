@@ -35,20 +35,22 @@ namespace _2._0
                 name = value;
             }
         }
-
+        string surname;
         public string Surname { get => surname; set => surname = value; }
+
+
+
+        int age;
         public int Age { get => age; set => age = value; }
 
-        string surname;
-        int age;
         readonly DateTime date;
 
-        
+
 
         public User()
-            {
+        {
             date = DateTime.Now;
-            }
+        }
 
         public User(string login, string name, string surname, int age)
         {
