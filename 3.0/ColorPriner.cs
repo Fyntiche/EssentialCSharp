@@ -15,7 +15,7 @@ namespace _3._0
             this.color = color;
         }
 
-        public void Print(string value)
+        public new void Print(string value)
         {
             Console.ForegroundColor = color;
             base.Print(value);
