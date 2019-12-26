@@ -31,6 +31,7 @@ namespace _7._3
             Console.ReadLine();
 
         }
+        DateTime date = DateTime.Now;
 
         static void ClassTaker(MyClass myClass)
         {
