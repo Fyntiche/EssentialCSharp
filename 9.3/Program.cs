@@ -24,6 +24,7 @@ namespace _9._3
             int n = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(new string('-', 50)); 
 
+
             var array = new MyDelegate[n]; //Создание массива делегатов
 
             for (int i = 0; i < array.Length; i++)
